@@ -48,10 +48,14 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['hostname'] = '192.168.1.2';
+if($_SERVER['SERVER_NAME']=='elliott.tld')
+{
+	$db['default']['hostname'] = 'localhost';
+}
+$db['default']['username'] = 'elliott-folio';
+$db['default']['password'] = 'ATbAf6DFCznHneMP';
+$db['default']['database'] = 'elliott-folio';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

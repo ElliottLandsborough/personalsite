@@ -41,6 +41,15 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
+/*
+$route['default_controller'] = "info";
+$route['post/(:any)'] = "singlepost/post/$1";
+$route['shorten/create'] = "shorten/create";
+$route['sitemap.xml'] = "sitemap/generate";
+$route['(:any)'] = "redirect/index/";
+$route['404_override'] = 'notfound';
+*/
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
