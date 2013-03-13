@@ -1,0 +1,9 @@
+commit.sh
+public_html/css/.sass-cache/
+# OS or Editor folders
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db*
+thumbs.db*
+Thumbs.db:encryptable*

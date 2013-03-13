@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /work/
+Disallow: /docs/
+Sitemap: http://el.lc/sitemap.xml
