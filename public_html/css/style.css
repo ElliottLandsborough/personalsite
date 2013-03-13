@@ -1,0 +1,13 @@
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/topleft.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  left: 0px; }
+  header .logo {
+    margin-top: 17px;
+    margin-left: 17px; }
