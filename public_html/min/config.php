@@ -10,8 +10,11 @@
 /**
  * Allow use of the Minify URI Builder app. Only set this to true while you need it.
  **/
-$min_enableBuilder = true;
-
+$min_enableBuilder = false;
+if($_SERVER['SERVER_NAME']=='elliott.tld')
+{
+	$min_enableBuilder = true;
+}
 
 /**
  * Set to true to log messages to FirePHP (Firefox Firebug addon).
@@ -52,7 +55,7 @@ $min_allowDebugFlag = false;
  */
 //require dirname(__FILE__) . '/lib/Minify/Cache/APC.php';
 //$min_cachePath = new Minify_Cache_APC();
-
+$min_cachePath = '/tmp';
 
 /**
  * Leave an empty string to use PHP's $_SERVER['DOCUMENT_ROOT'].
