@@ -10,12 +10,11 @@ class Shorten extends CI_Controller
      */
     public function create()
     {
-	    $this->load->helper('url');
 	    $this->load->helper('string');
 		$short_url = "";
 		if($this->input->post('url'))
 		{
-				$url=prep_url($this->input->post('url'));
+			$url=prep_url($this->input->post('url'));
 			$link_length=3;
 			// Check to see if this URL has an Alias
 			$existing_alias = $this->alias_from_url($url);
@@ -42,29 +41,8 @@ class Shorten extends CI_Controller
 			    $short_url=$existing_alias;
 			}
 			$data['shorturl']=base_url() . $short_url;
-			if($this->input->post('ajax')=='1')
-			{
-				echo $data['shorturl'];
-			}
-			else
-			{
-				$data['title']='your link';
-				$this->load->view('header',$data);
-				$this->load->view('shorturl',$data);
-				$this->load->view('footer');		
-			}
-		}
-		else
-		{
-			if($this->input->post('ajax')=='1')
-			{
-				echo 'fail';
-			}
-			else
-			{
-				$this->load->view('header');
-				$this->load->view('footer');
-			}
+			header('Content-Type: application/json');
+			echo json_encode($data);
 		}
     }
 
@@ -129,4 +107,4 @@ class Shorten extends CI_Controller
 }
 
 /* End of file Shorten.php */
-    /* Location: ./application/controllers/Shorten.php */
+/* Location: ./application/controllers/Shorten.php */

@@ -1,5 +1,4 @@
 commit.sh
-public_html/css/.sass-cache/
 # OS or Editor folders
 .DS_Store*
 ehthumbs.db
