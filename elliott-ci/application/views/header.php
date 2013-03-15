@@ -12,12 +12,17 @@ if(isset($title))
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
         <title>el.lc</title>
-        <meta name="description" content="">
+        <meta name="description" content="Information about Elliott Landsborough and a modest URL shortening service.">
+        <link rel="author" href="https://plus.google.com/108325287078081298995/about" />
+
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/css/normalize.min.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <lik rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/alertify.core.css">
+        <link rel="stylesheet" href="/css/alertify.default.css">
         <link rel="stylesheet" href="/css/style.css">
 
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>

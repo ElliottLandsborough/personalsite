@@ -1,5 +1,6 @@
-        <script src="/js/zepto.min.js"></script>
-        <script src="/js/main.js"></script>
+        <script src="<?php echo site_url('js/zepto.min.js'); ?>"></script>
+        <script src="<?php echo site_url('/js/alertify.0.3.8.min.js'); ?>"></script>
+        <script src="<?php echo site_url('/js/main.js'); ?>"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
