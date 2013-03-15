@@ -19,18 +19,14 @@ if(isset($title))
 
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="/css/normalize.min.css">
-        <lik rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/alertify.core.css">
-        <link rel="stylesheet" href="/css/alertify.default.css">
-        <link rel="stylesheet" href="/css/style.css">
+        <link type="text/css" rel="stylesheet" href="/min/b=css&amp;f=normalize.min.css,alertify.core.css,alertify.default.css,style.css" />
 
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="<?php echo site_url('js/vendor/modernizr-2.6.2.min.js'); ?>"></script>
     </head>
     <body>
         <header>
-            <img class="logo" src="/img/logo.png" alt="el.lc" />
-            <a href="#" class="shortenlink"><img src="/img/downarrow.png" alt="el.lc"></a>
+            <img class="logo" src="<?php echo site_url('/img/logo.png'); ?>" alt="el.lc" />
+            <a href="#" class="shortenlink"><img src="<?php echo site_url('/img/downarrow.png'); ?>" alt="el.lc"></a>
             <div class="menu"><h1>Elliott Landsborough</h1> / <?php echo safe_mailto('me@el.lc','email'); ?> / <a href="http://github.com/elliottlandsborough">github</a></div>
             <?php $this->load->view('shortform'); ?>
         </header>
