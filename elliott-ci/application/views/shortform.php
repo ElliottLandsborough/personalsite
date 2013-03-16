@@ -2,7 +2,7 @@
 	<?php
 	$attributes = array('class' => 'shortform');
 	$this->load->helper('form');
-	echo form_open(form_open('/shorten/create'),$attributes);
+	echo form_open(site_url('/shorten/create'),$attributes);
 	$data = array(
 		'name' => 'url',
 		'class' => 'text',
