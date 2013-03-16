@@ -1,10 +1,26 @@
 var originalheadheight = 77;
 var extraheight = 40;
 
-function changeheader(newheight)
+function toggleheader()
 {
+	var show=false;
+	if ( $('header').height() == originalheadheight )
+	{
+		$('.shorten').removeClass('hidden');
+		newheight = originalheadheight + extraheight;
+	}
+	else
+	{
+		show=true;
+		newheight = originalheadheight;
+	}
 	$('body').animate({'padding-top':newheight}, {'duration':100});
-	$('header').animate({'height':newheight}, {'duration':100});
+	$('header').animate({'height':newheight}, {'duration':100}, function () {
+		if ( show === true )
+		{
+			$('.shorten').addClass('hidden');
+		}
+	});
 }
 
 function smallurl(result)
@@ -20,14 +36,7 @@ $(document).ready(function()
 	// toggle show hide 
 	$('header').on('click', '.shortenlink', function(event) {
 		event.preventDefault();
-		if ( $('header').height() == originalheadheight )
-		{
-			changeheader( originalheadheight + extraheight );
-		}
-		else
-		{
-			changeheader( originalheadheight );
-		}
+		toggleheader();
 	});
 
 	$('.shorten').on('submit', 'form', function(event) {

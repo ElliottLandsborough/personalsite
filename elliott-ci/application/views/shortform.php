@@ -1,4 +1,4 @@
-<div class="shorten">
+<div class="shorten hidden">
 	<?php
 	$attributes = array('class' => 'shortform');
 	$this->load->helper('form');
