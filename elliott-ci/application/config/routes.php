@@ -39,10 +39,7 @@
 */
 
 $route['default_controller'] = "welcome";
-//$route['post/(:any)'] = "singlepost/post/$1";
 $route['shorten/create'] = "shorten/create";
-$route['sitemap.xml'] = "sitemap/generate";
-$route['404_override'] = '';
 $route['(:any)'] = "redirect/index/";
 $route['404_override'] = 'notfound';
 
