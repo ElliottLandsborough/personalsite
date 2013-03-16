@@ -8,4 +8,4 @@
 <li>Cross Browser Compatibility, Photoshop, SEO, E-Commerce</li>
 </ul>
 <h2>More info</h2>
-<p>If you need a more detailed description of my skills you can <a href="<?php echo site_url('docs/CV.Elliott.Landsborough.public.pdf'); ?>">download my CV</a>.</p>
+<p>If you need a more detailed description of my skills you can <a href="<?php echo base_url('docs/CV.Elliott.Landsborough.public.pdf'); ?>">download my CV</a>.</p>
