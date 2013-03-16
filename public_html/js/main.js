@@ -15,12 +15,7 @@ function toggleheader()
 		newheight = originalheadheight;
 	}
 	$('body').animate({'padding-top':newheight}, {'duration':100});
-	$('header').animate({'height':newheight}, {'duration':100}, function () {
-		if ( show === true )
-		{
-			$('.shorten').addClass('hidden');
-		}
-	});
+	$('header').animate({'height':newheight}, {'duration' : 100, 'complete' : function() { if ( show === true ) { $('.shorten').addClass('hidden'); } } } );
 }
 
 function smallurl(result)
