@@ -1,8 +1,12 @@
 <?php
 $pagetitle='el.lc';
-if(isset($title))
+if( isset($title) && $title!='' && $title != null )
 {
     $pagetitle=$pagetitle . ' - ' . $title;
+}
+else
+{
+    $pagetitle=$pagetitle . ' - ' . 'Elliott Landsborough';
 }
 ?><!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -13,11 +17,13 @@ if(isset($title))
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>el.lc</title>
-        <meta name="description" content="Information about Elliott Landsborough and a modest URL shortening service.">
-        <link rel="author" href="https://plus.google.com/108325287078081298995/about" />
+        <title><?php echo $pagetitle; ?></title>
+        <meta name="description" content="Elliott Landsborough's personal website. Information about me and URL shortening service.">
+        <meta name="keywords" content="Elliott, Landsborough, portfolio, php, url, shortening, contact, cv">
+        <meta name="author" content="Elliott Landsborough" />
+        <link rel="author" href="https://plus.google.com/108325287078081298995/about">
 
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link type="text/css" rel="stylesheet" href="<?php echo base_url('/min/b=css&amp;f=normalize.min.css,alertify.core.css,alertify.default.css,style.css'); ?>" />
 

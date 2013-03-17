@@ -3,6 +3,10 @@ body
 	padding-top: 77px
 	color: #424242
 	header
+		&::selection
+			background: #fff
+		&::-moz-selection
+			background: #fff
 		width: 100%
 		height: 77px
 		background-image: url(/img/topleft.png)
@@ -86,3 +90,17 @@ ul
 	width: 100%
 	display: block
 	margin: 0px auto
+*
+	&::selection
+		background: #424242
+		color: #fff
+	&::-moz-selection
+		background: #424242
+		color: #fff
+
+a
+	color: #d3591f
+	&:visited
+		color: #f26522
+	&:hover
+		color: #f26522

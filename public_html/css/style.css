@@ -12,6 +12,10 @@ body {
     position: fixed;
     top: 0px;
     left: 0px; }
+    body header::selection {
+      background: white; }
+    body header::-moz-selection {
+      background: white; }
     body header .logo {
       margin-top: 17px;
       margin-left: 17px; }
@@ -88,3 +92,17 @@ ul {
   width: 100%;
   display: block;
   margin: 0px auto; }
+
+*::selection {
+  background: #424242;
+  color: white; }
+*::-moz-selection {
+  background: #424242;
+  color: white; }
+
+a {
+  color: #d3591f; }
+  a:visited {
+    color: #f26522; }
+  a:hover {
+    color: #f26522; }
