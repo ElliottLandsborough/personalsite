@@ -19,7 +19,7 @@ if(isset($title))
 
         <meta name="viewport" content="width=device-width">
 
-        <link type="text/css" rel="stylesheet" href="/min/b=css&amp;f=normalize.min.css,alertify.core.css,alertify.default.css,style.css" />
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url('/min/b=css&amp;f=normalize.min.css,alertify.core.css,alertify.default.css,style.css'); ?>" />
 
         <script src="<?php echo base_url('js/vendor/modernizr-2.6.2.min.js'); ?>"></script>
     </head>
