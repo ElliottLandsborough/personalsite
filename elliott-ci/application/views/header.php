@@ -18,7 +18,7 @@ else
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
         <title><?php echo $pagetitle; ?></title>
-        <meta name="description" content="Elliott Landsborough's personal website. Information about me and URL shortening service.">
+        <meta name="description" content="Elliott Landsborough's personal website. Find out information about me or shorten your URLs with my ridiculously small domain name.">
         <meta name="keywords" content="Elliott, Landsborough, portfolio, php, url, shortening, contact, cv">
         <meta name="author" content="Elliott Landsborough" />
         <link rel="author" href="https://plus.google.com/108325287078081298995/about">
