@@ -1,8 +1,8 @@
 <h2>About me</h2>
 <div itemscope itemtype="http://data-vocabulary.org/Person">
 	<p class="hidden">Hello, my name is <span itemprop="name">Elliott Landsborough</span></p>
-	<img src="/img/" />
-	<p>I'm an experienced website <span itemprop="title">developer</span> and server administrator based near London.</p>
+	<p class="hidden"><img itemprop="photo" style="width: 5%; height: 5%;" src="/img/portrait.scaled.png" /></p>
+	<p>I'm an experienced <span itemprop="title">web developer</span> and server administrator based near <span itemprop="locality">London</span>.</p>
 	<h2>What I can do</h2>
 	<ul>
 		<li>HTML, CSS, Javascript, Jquery/Zepto, AJAX, SASS</li>
