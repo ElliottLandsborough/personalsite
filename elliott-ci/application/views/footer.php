@@ -6,10 +6,12 @@
         }
         else
         {
-            echo PHP_EOL.'<script src="'.base_url('js/zepto.min.js').'"></script>'.PHP_EOL;
+            $js[]='zepto.min.js';
         }
+        $js[]='alertify.0.3.8.min.js';
+        $js[]='main.js';
         ?>
-        <script src="<?php echo base_url('/min/b=js&amp;f=alertify.0.3.8.min.js,main.js'); ?>"></script>
+        <script src="<?php echo base_url('/min/b=js&amp;f='.implode(',',$js)); ?>"></script>
         <script>var _gaq=[['_setAccount','UA-33351041-1'],['_trackPageview']];(function(d){var g=d.createElement('script'),s=d.scripts[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s);}(document));</script>
     </body>
 </html>
